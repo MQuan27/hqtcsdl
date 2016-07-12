@@ -2,8 +2,8 @@ package hcmuaf.edu.vn.service;
 
 import java.util.List;
 
-import hcmuaf.edu.vn.model.Product;
-import hcmuaf.edu.vn.model.ProductType;
+import hcmuaf.edu.vn.entity.Product;
+import hcmuaf.edu.vn.entity.ProductType;
 
 public interface ProductServices {
 

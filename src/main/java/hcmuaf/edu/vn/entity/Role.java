@@ -1,4 +1,4 @@
-package hcmuaf.edu.vn.model;
+package hcmuaf.edu.vn.entity;
 
 import static javax.persistence.GenerationType.IDENTITY;
 

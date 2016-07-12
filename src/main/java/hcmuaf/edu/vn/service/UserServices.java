@@ -2,8 +2,8 @@ package hcmuaf.edu.vn.service;
 
 import java.util.List;
 
-import hcmuaf.edu.vn.model.PaymentMethod;
-import hcmuaf.edu.vn.model.User;
+import hcmuaf.edu.vn.entity.PaymentMethod;
+import hcmuaf.edu.vn.entity.User;
 
 public interface UserServices {
 

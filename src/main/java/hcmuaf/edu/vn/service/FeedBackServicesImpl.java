@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import hcmuaf.edu.vn.dao.FeedBackDAO;
-import hcmuaf.edu.vn.model.Feedback;
+import hcmuaf.edu.vn.entity.Feedback;
 
 @Transactional
 @Service

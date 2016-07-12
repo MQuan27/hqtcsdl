@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import hcmuaf.edu.vn.dao.OrderDAO;
-import hcmuaf.edu.vn.model.OrderItem;
-import hcmuaf.edu.vn.model.OrderStatus;
-import hcmuaf.edu.vn.model.UserOrder;
+import hcmuaf.edu.vn.entity.OrderItem;
+import hcmuaf.edu.vn.entity.OrderStatus;
+import hcmuaf.edu.vn.entity.UserOrder;
 
 @Transactional
 @Service

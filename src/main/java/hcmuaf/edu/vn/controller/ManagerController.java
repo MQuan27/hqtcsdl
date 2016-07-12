@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import hcmuaf.edu.vn.model.Feedback;
-import hcmuaf.edu.vn.model.PaymentMethod;
-import hcmuaf.edu.vn.model.Product;
-import hcmuaf.edu.vn.model.ProductType;
-import hcmuaf.edu.vn.model.Role;
-import hcmuaf.edu.vn.model.User;
-import hcmuaf.edu.vn.model.UserOrder;
+import hcmuaf.edu.vn.entity.Feedback;
+import hcmuaf.edu.vn.entity.PaymentMethod;
+import hcmuaf.edu.vn.entity.Product;
+import hcmuaf.edu.vn.entity.ProductType;
+import hcmuaf.edu.vn.entity.Role;
+import hcmuaf.edu.vn.entity.User;
+import hcmuaf.edu.vn.entity.UserOrder;
 import hcmuaf.edu.vn.service.FeedBackServices;
 import hcmuaf.edu.vn.service.OrderServices;
 import hcmuaf.edu.vn.service.ProductServices;
@@ -31,7 +31,7 @@ import hcmuaf.edu.vn.service.UserServices;
 import hcmuaf.edu.vn.util.Util;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/manager")
 public class ManagerController {
 	@Autowired
 	UserServices userServices;

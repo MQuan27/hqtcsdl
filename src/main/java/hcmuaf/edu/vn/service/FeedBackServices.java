@@ -2,7 +2,7 @@ package hcmuaf.edu.vn.service;
 
 import java.util.List;
 
-import hcmuaf.edu.vn.model.Feedback;
+import hcmuaf.edu.vn.entity.Feedback;
 
 public interface FeedBackServices {
 	public void addFeedBack(Feedback feedBack);

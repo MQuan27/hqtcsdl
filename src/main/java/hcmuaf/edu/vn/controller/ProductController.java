@@ -9,7 +9,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import hcmuaf.edu.vn.model.Product;
+import hcmuaf.edu.vn.entity.Product;
 import hcmuaf.edu.vn.service.ProductServices;
 
 @Controller

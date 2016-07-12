@@ -7,10 +7,10 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import hcmuaf.edu.vn.model.OrderItem;
-import hcmuaf.edu.vn.model.OrderStatus;
-import hcmuaf.edu.vn.model.User;
-import hcmuaf.edu.vn.model.UserOrder;
+import hcmuaf.edu.vn.entity.OrderItem;
+import hcmuaf.edu.vn.entity.OrderStatus;
+import hcmuaf.edu.vn.entity.User;
+import hcmuaf.edu.vn.entity.UserOrder;
 
 @Repository
 public class OrderDAOImpl implements OrderDAO {

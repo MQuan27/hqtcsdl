@@ -2,7 +2,7 @@ package hcmuaf.edu.vn.dao;
 
 import java.util.List;
 
-import hcmuaf.edu.vn.model.Feedback;
+import hcmuaf.edu.vn.entity.Feedback;
 
 public interface FeedBackDAO {
 	public void addFeedBack(Feedback feedBack);

@@ -2,9 +2,9 @@ package hcmuaf.edu.vn.dao;
 
 import java.util.List;
 
-import hcmuaf.edu.vn.model.OrderItem;
-import hcmuaf.edu.vn.model.OrderStatus;
-import hcmuaf.edu.vn.model.UserOrder;
+import hcmuaf.edu.vn.entity.OrderItem;
+import hcmuaf.edu.vn.entity.OrderStatus;
+import hcmuaf.edu.vn.entity.UserOrder;
 
 public interface OrderDAO {
 

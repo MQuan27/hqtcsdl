@@ -2,7 +2,7 @@ package hcmuaf.edu.vn.dao;
 
 import java.util.List;
 
-import hcmuaf.edu.vn.model.Role;
+import hcmuaf.edu.vn.entity.Role;
 
 public interface RoleDAO {
 	

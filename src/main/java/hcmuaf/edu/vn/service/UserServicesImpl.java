@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import hcmuaf.edu.vn.dao.UserDAO;
-import hcmuaf.edu.vn.model.PaymentMethod;
-import hcmuaf.edu.vn.model.User;
+import hcmuaf.edu.vn.entity.PaymentMethod;
+import hcmuaf.edu.vn.entity.User;
 
 @Transactional
 @Service

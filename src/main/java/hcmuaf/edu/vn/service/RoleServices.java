@@ -2,7 +2,7 @@ package hcmuaf.edu.vn.service;
 
 import java.util.List;
 
-import hcmuaf.edu.vn.model.Role;
+import hcmuaf.edu.vn.entity.Role;
 
 public interface RoleServices {
 

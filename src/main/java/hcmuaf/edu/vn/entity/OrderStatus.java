@@ -1,9 +1,10 @@
-package hcmuaf.edu.vn.model;
+package hcmuaf.edu.vn.entity;
 
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,8 +16,8 @@ import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
 @Entity
-@Table(name = "product_type")
-public class ProductType implements Serializable {
+@Table(name = "order_status")
+public class OrderStatus implements Serializable {
 
 	/**
 	 * 
@@ -24,18 +25,18 @@ public class ProductType implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer productTypeId;
+	private Integer orderStatusId;
 	private String description;
-	@OneToMany(mappedBy = "productType")
+	@OneToMany(mappedBy = "orderStatus", cascade = { CascadeType.ALL })
 	@LazyCollection(LazyCollectionOption.FALSE)
-	private Set<Product> products = new HashSet<Product>(0);
+	private Set<UserOrder> userOrders = new HashSet<UserOrder>(0);
 
-	public Integer getProductTypeId() {
-		return productTypeId;
+	public Integer getOrderStatusId() {
+		return orderStatusId;
 	}
 
-	public void setProductTypeId(Integer productTypeId) {
-		this.productTypeId = productTypeId;
+	public void setOrderStatusId(Integer orderStatusId) {
+		this.orderStatusId = orderStatusId;
 	}
 
 	public String getDescription() {
@@ -46,12 +47,14 @@ public class ProductType implements Serializable {
 		this.description = description;
 	}
 
-	public Set<Product> getProducts() {
-		return products;
+	public Set<UserOrder> getUserOrders() {
+		return userOrders;
 	}
 
-	public void setProducts(Set<Product> products) {
-		this.products = products;
+	public void setUserOrders(Set<UserOrder> userOrders) {
+		this.userOrders = userOrders;
 	}
+
+	
 
 }

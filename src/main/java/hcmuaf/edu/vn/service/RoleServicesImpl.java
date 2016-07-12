@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import hcmuaf.edu.vn.dao.RoleDAO;
-import hcmuaf.edu.vn.model.Role;
+import hcmuaf.edu.vn.entity.Role;
 
 @Service
 @Transactional

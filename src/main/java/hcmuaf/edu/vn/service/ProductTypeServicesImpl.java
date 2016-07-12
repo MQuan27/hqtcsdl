@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import hcmuaf.edu.vn.dao.ProductTypeDAO;
-import hcmuaf.edu.vn.model.ProductType;
+import hcmuaf.edu.vn.entity.ProductType;
 
 @Service
 @Transactional

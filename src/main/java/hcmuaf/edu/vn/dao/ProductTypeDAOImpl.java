@@ -6,7 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import hcmuaf.edu.vn.model.ProductType;
+import hcmuaf.edu.vn.entity.ProductType;
 
 @Repository
 public class ProductTypeDAOImpl implements ProductTypeDAO {

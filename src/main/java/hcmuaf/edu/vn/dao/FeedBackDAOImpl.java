@@ -6,7 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import hcmuaf.edu.vn.model.Feedback;
+import hcmuaf.edu.vn.entity.Feedback;
 
 @Repository
 public class FeedBackDAOImpl implements FeedBackDAO {
