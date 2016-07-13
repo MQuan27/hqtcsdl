@@ -24,7 +24,7 @@
 <!-- Page Specific CSS -->
 <link rel="stylesheet"
 	href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
-<link href="<c:url value="/resources/front_end/css/formsignin.css"/>"
+<link href="<c:url value="/resources/back_end/css/formsignin.css"/>"
 	rel="stylesheet">
 </head>
 
@@ -54,11 +54,10 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="<c:url value="/resources/front_end/js/jquery-1.10.2.js"/>"></script>
-	<script src="<c:url value="/resources/front_end/js/bootstrap.js"/>"></script>
-	<script src="<c:url value="/resources/front_end/js/holder.js"/>"></script>
-	<script src="<c:url value="/resources/front_end/js/validator.js"/>"></script>
-
+	<script src="<c:url value="/resources/back_end/js/jquery-1.10.2.js"/>"></script>
+	<script src="<c:url value="/resources/back_end/js/bootstrap.js"/>"></script>
+	<script src="<c:url value="/resources/back_end/js/holder.js"/>"></script>
+	<script src="<c:url value="/resources/back_end/js/validator.js"/>"></script>
 
 </body>
 </html>

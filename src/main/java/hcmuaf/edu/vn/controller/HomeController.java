@@ -14,7 +14,7 @@ public class HomeController {
 		System.out.println("Home hello controller");
 		// return "redirect:/organisation/addOrg";
 		// return "redirect:/organisation/layout";
-		return "redirect:/home";
+		return "administrator/managelogin";
 
 	}
 }
