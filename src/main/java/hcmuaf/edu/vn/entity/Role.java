@@ -1,37 +1,30 @@
 package hcmuaf.edu.vn.entity;
 
-import static javax.persistence.GenerationType.IDENTITY;
-
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
-
 @Entity
-@Table(name = "role")
-public class Role implements Serializable {
+@Table(name = "ROLE")
+public class Role{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	@Id
-	@GeneratedValue(strategy = IDENTITY)
-	@Column(name = "role_id", unique = true, nullable = false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ROLEID", unique = true, nullable = false)
 	private Integer roleId;
-	@Column(name = "name", nullable = false)
+	
+	@Column(name = "NAME")
 	private String name;
-	@OneToMany(mappedBy = "role")
-	@LazyCollection(LazyCollectionOption.FALSE)
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "role")
 	private Set<User> user = new HashSet<User>(0);
 
 	public Set<User> getUser() {
